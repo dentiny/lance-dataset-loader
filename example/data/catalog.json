@@ -1,0 +1,38 @@
+{
+  "description": "Synthetic examples; token IDs are not produced by a real tokenizer.",
+  "storage_version": "2.0",
+  "datasets": {
+    "coding": {
+      "path": "coding.lance",
+      "version": 1,
+      "rows": 8,
+      "tokens_per_sequence": 8,
+      "first_id": 0,
+      "first_token": 100
+    },
+    "math": {
+      "path": "math.lance",
+      "version": 1,
+      "rows": 12,
+      "tokens_per_sequence": 4,
+      "first_id": 0,
+      "first_token": 500
+    },
+    "general": {
+      "path": "general.lance",
+      "version": 1,
+      "rows": 8,
+      "tokens_per_sequence": 4,
+      "first_id": 0,
+      "first_token": 800
+    },
+    "coding_v2": {
+      "path": "coding_v2.lance",
+      "version": 1,
+      "rows": 8,
+      "tokens_per_sequence": 8,
+      "first_id": 100,
+      "first_token": 1200
+    }
+  }
+}
