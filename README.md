@@ -13,12 +13,10 @@ Deterministic, resumable mixtures of versioned Lance datasets for ML training.
 - Explicit phase transitions: replace a source/reset its cursor, retain other source progress, or change mixture weights.
 - Optional per-source pass caps and an explicit incomplete-tail policy.
 
-## Install and test
+## Install and run
 
 ```bash
-uv sync --group dev
-uv run pytest
-uv run ruff check .
+uv sync
 uv run python examples/train_and_resume.py
 ```
 
