@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Lance examples need their version manifests checked in.
+!example/data/**/*.manifest

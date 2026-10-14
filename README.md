@@ -17,10 +17,24 @@ Deterministic, resumable mixtures of versioned Lance datasets for ML training.
 
 ```bash
 uv sync
-uv run python examples/train_and_resume.py
+uv run python example/basic_usage.py
 ```
 
 Python 3.10+ is required. Storage reads use `pylance`, not a LanceDB connection. Core scheduling is independent of PyTorch; a backend may also implement the `Source` protocol.
+
+## Feature examples
+
+[example/README.md](example/README.md) lists one runnable Python file per feature, including basic usage, mixing or physically merging datasets, deterministic shuffle, checkpoint recovery, source replacement, mix changes, token weighting, DP slicing, pass caps, prefetch and column projection.
+
+Four small synthetic Lance datasets are bundled under `example/data/`; no data download or preparation is required. Start with:
+
+```bash
+uv run python example/basic_usage.py
+uv run python example/mix_multiple_datasets.py
+uv run python example/checkpoint_resume.py
+```
+
+The examples read pinned snapshots and write any checkpoint/merged outputs to temporary directories. They demonstrate the loader on CPU; they do not train a model.
 
 ## Training
 
